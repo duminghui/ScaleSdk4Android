@@ -1,0 +1,6 @@
+This is a Project for smart electronic scale base on Bluetooth
+Proejct include this funcation
+>> Authentication user
+>> connection smart electronic scale with Bluetooth
+>> Exchange date with HTTP services
+>> Save and Show body info to users
