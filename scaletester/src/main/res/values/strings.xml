@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">秤测试(hcoor hs)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scan">扫描</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="height">身高(cm):</string>
+    <string name="age">年\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020龄:</string>
+    <string name="sex">性\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020别:</string>
+    <string name="weighting">实时体重:</string>
+    <string name="time">时\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020间:</string>
+    <string name="weight">体\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020重:</string>
+    <string name="bf">脂\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020肪:</string>
+    <string name="water">水\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020分:</string>
+    <string name="muscle">肌\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020肉:</string>
+    <string name="bone">骨\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020量:</string>
+    <string name="bmr">基础代谢:</string>
+    <string name="in_fat">内脏脂肪:</string>
+    <string name="body_age">体\u0020\u0020年\u0020\u0020龄:</string>
+    <string name="connect_info">连接状态:</string>
+    <string name="software_var">软件版本:</string>
+    <string name="hardware_id">秤\u0020\u0020体\u0020\u0020ID:</string>
+</resources>

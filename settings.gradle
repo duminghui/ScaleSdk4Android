@@ -1,0 +1,1 @@
+include ':app', ':cheng-sdk', ':scaletester', ':writehardwardid', ':library-scanbt', ':lib', ':library-del-bonded-devices'

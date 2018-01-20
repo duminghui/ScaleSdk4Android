@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Library-ScanBT</string>
+    <string name="select_device">选择一个设备连接</string>
+    <string name="scanning">正在扫描设备…</string>
+    <string name="none_paired">没有配对的设备</string>
+    <string name="none_found">没有扫描到设备</string>
+    <string name="title_other_devices">可使用的设备</string>
+    <string name="button_scan">扫描设备</string>
+</resources>

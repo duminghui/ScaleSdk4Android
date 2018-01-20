@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">秤体ID烧录(hcoor hs)</string>
+
+    <string name="scan">扫描</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+
+    <string name="connect_info">连\u0020接\u0020状\u0020态:</string>
+    <string name="software_var">软\u0020件\u0020版\u0020本:</string>
+    <string name="hardware_id">当前秤体ID:</string>
+    <string name="write_id">写入ID:</string>
+    <string name="candidateId">待烧录ID:</string>
+    <string name="write_id_result">烧录结果:</string>
+    <string name="input_candidate_id">输入12位的初始ID</string>
+
+
+    <string name="upload_sn_2_server_count">上传ID至服务器(%1$s条待上传)</string>
+    <string name="uploaded_sn_2_server_count">已经上传(%1$s)条</string>
+    <string name="info_success_upload_count">本次上传(%1$s)条ID至服务器,还有(%2$s)条等上传</string>
+    <string name="info_error_upload_count">上传失败(%1$s条):%2$s</string>
+    <string name="id_is_use">ID[%1$s]已分配给于[%2$s]</string>
+    <string name="id_change_to">待烧录ID由"%1$s"变为"%2$s"</string>
+    <string name="refresh">刷新</string>
+    <string name="editId">编辑ID</string>
+</resources>

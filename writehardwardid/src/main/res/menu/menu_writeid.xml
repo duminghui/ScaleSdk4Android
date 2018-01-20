@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_del_bonded_devices"
+        android:title="@string/delBondedDevices"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_edit_id"
+        android:title="@string/editId"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/refresh_loading"
+        android:icon="@color/transparent"
+        android:title="@string/refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_upload_sn_2_server"
+        android:orderInCategory="100"
+        android:title="@string/upload_sn_2_server_count"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_uploaded_sn_2_server"
+        android:enabled="false"
+        android:orderInCategory="100"
+        android:title="@string/uploaded_sn_2_server_count"
+        app:showAsAction="never" />
+
+</menu>

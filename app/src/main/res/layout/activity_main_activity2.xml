@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="chengsdk.android.MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Button-->
+            <!--android:id="@+id/btnAddMemebership"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="添加成员" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnUpdateMembership"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnAddMemebership"-->
+            <!--android:text="编辑成员" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnDelMembership"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnUpdateMembership"-->
+            <!--android:text="删除成员" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnMembershipList"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnDelMembership"-->
+            <!--android:text="成员列表" />-->
+
+        <!--android:layout_below="@id/btnMembershipList"-->
+        <Button
+            android:id="@+id/btnDataUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="数据上报" />
+
+        <Button
+            android:id="@+id/btnGetMemberReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDataUpload"
+            android:text="获取用户报告" />
+
+        <Button
+            android:id="@+id/btnGetFitnessReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetMemberReport"
+            android:text="获取个人健康报告" />
+
+        <Button
+            android:id="@+id/btnGetFitnessProposal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetFitnessReport"
+            android:text="获取健康建议" />
+
+        <Button
+            android:id="@+id/btnGetTendencyChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetFitnessProposal"
+            android:text="获取趋势图" />
+
+        <Button
+            android:id="@+id/btnGetFamilyReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetTendencyChart"
+            android:text="获取家庭报告" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnUploadFacelogo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnGetFamilyReport"-->
+            <!--android:text="上传用户头像" />-->
+
+        <Button
+            android:id="@+id/btnUploadSN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetFamilyReport"
+            android:text="上传SN" />
+    </RelativeLayout>
+</ScrollView>

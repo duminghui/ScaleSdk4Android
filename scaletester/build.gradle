@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'me.tatarka.retrolambda'
+//apply plugin: 'retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "hcoor.scaletester"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            applicationIdSuffix '.release'
+            minifyEnabled true
+            zipAlignEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+//    lintOptions {
+//        abortOnError false
+//    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile project(':cheng-sdk')
+    compile project(':library-scanbt')
+    compile project(':library-del-bonded-devices')
+    apt "org.androidannotations:androidannotations:3.2"
+    compile "org.androidannotations:androidannotations-api:3.2"
+//    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:1.8.0'
+//    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.0.1'
+}
+
+//println("AAA:${variant.outputs[0].processResources.manifestFile}")
+println "#####:${android.defaultConfig.applicationId}"
+apt {
+    arguments {
+        //region 用于Android Annotations
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+//        resourcePackageName android.defaultConfig.applicationId
+        resourcePackageName 'demo.scaletester'
+        trace true
+        //endregion
+    }
+}
+//
+//retrolambda {
+//    jdk JAVA8_HOME
+//    oldJdk JAVA7_HOME
+//    javaVersion JavaVersion.VERSION_1_6
+//}
+
+

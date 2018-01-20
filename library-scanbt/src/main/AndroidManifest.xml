@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="demo.library_scanbt">
+
+    <application android:allowBackup="true">
+        <activity
+            android:name="demo.scanbt.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" />
+    </application>
+
+</manifest>

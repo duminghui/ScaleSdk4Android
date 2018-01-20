@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接" />
+
+        <TextView
+            android:id="@+id/tvConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnConnection"
+            android:layout_toRightOf="@id/btnConnection"
+            android:gravity="center"
+            android:text="连接状态" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnCreateUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnConnection"-->
+            <!--android:enabled="false"-->
+            <!--android:text="创建用户" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvCreateUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnCreateUser"-->
+            <!--android:layout_toRightOf="@id/btnCreateUser"-->
+            <!--android:text="创建用户结果与ID" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnDelUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnCreateUser"-->
+            <!--android:enabled="false"-->
+            <!--android:text="删除用户" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvDelUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnDelUser"-->
+            <!--android:layout_toRightOf="@id/btnDelUser"-->
+            <!--android:text="删除用户结果" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnUpdateUser"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnDelUser"-->
+            <!--android:text="更新用户" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvUpdateUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnUpdateUser"-->
+            <!--android:layout_toRightOf="@id/btnUpdateUser"-->
+            <!--android:text="更新用户结果" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnReadUserInfos"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnUpdateUser"-->
+            <!--android:text="读取所有用户参数" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvReadUserInfos"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnReadUserInfos"-->
+            <!--android:layout_toRightOf="@id/btnReadUserInfos"-->
+            <!--android:text="所有用户参数结果" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnSelectUserMetage"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnReadUserInfos"-->
+            <!--android:text="选择用户测量" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvSelectUserMetage"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnSelectUserMetage"-->
+            <!--android:layout_toRightOf="@id/btnSelectUserMetage"-->
+            <!--android:text="选择用户参数结果" />-->
+
+        <TextView
+            android:id="@+id/tvBodyInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnConnection"
+            android:text="测量数据结果：" />
+
+        <TextView
+            android:id="@+id/tvBodyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/tvBodyInfoTitle"
+            android:text="测量数据结果显示" />
+
+        <TextView
+            android:id="@+id/tvMetagingWeightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBodyInfo"
+            android:text="实时重量：" />
+
+        <TextView
+            android:id="@+id/tvMetagingWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvMetagingWeightTitle"
+            android:layout_toRightOf="@id/tvMetagingWeightTitle"
+            android:text="实时重量" />
+
+        <Button
+            android:id="@+id/btnVisitorUserMetage"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMetagingWeightTitle"
+            android:text="游客身份测量" />
+
+        <TextView
+            android:id="@+id/tvVisitorUserMetage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnVisitorUserMetage"
+            android:layout_toRightOf="@id/btnVisitorUserMetage"
+            android:text="游客身份测量结果" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnReadUserBodyInfos"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnVisitorUserMetage"-->
+            <!--android:text="读取用户测量数据" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvReadUserBodyInfos"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnReadUserBodyInfos"-->
+            <!--android:layout_toRightOf="@id/btnReadUserBodyInfos"-->
+            <!--android:text="用户测量数据结果显示" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnDelUserBodyInfos"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnReadUserBodyInfos"-->
+            <!--android:text="删除用户测量数据" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvDelUserBodyInfos"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/btnDelUserBodyInfos"-->
+            <!--android:layout_toRightOf="@id/btnDelUserBodyInfos"-->
+            <!--android:text="删除用户测量数据结果显示" />-->
+
+        <Button
+            android:id="@+id/btnReadHardwareId"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnVisitorUserMetage"
+            android:text="读取ID" />
+
+        <TextView
+            android:id="@+id/tvReadHardwareId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnReadHardwareId"
+            android:layout_toRightOf="@id/btnReadHardwareId"
+            android:text="ID" />
+
+        <Button
+            android:id="@+id/btnWriteHardwareId"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnReadHardwareId"
+            android:text="写入ID" />
+
+        <TextView
+            android:id="@+id/tvWriteHardwareId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnWriteHardwareId"
+            android:layout_toRightOf="@id/btnWriteHardwareId"
+            android:text="写入结果" />
+
+        <Button
+            android:id="@+id/btnResetHardwareId"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnWriteHardwareId"
+            android:text="重置ID" />
+
+        <TextView
+            android:id="@+id/tvResetHardwareId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnResetHardwareId"
+            android:layout_toRightOf="@id/btnResetHardwareId"
+            android:text="重置结果" />
+
+        <Button
+            android:id="@+id/btnReadHardwareVar"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnResetHardwareId"
+            android:text="读取软件版本" />
+
+        <TextView
+            android:id="@+id/tvReadHardwareVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnReadHardwareVar"
+            android:layout_toRightOf="@id/btnReadHardwareVar"
+            android:text="软件版本" />
+
+    </RelativeLayout>
+</ScrollView>

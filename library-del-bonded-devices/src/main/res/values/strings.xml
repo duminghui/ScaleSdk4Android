@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">library-del-bonded-devices</string>
+    <string name="delBondedDevices">删除绑定设备</string>
+    <string name="delBondedDevicesIng">正在删除绑定设备</string>
+    <string name="delBondedDevicesEnd">删除绑定设备完成</string>
+</resources>
