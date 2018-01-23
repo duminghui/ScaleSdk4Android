@@ -53,8 +53,8 @@ dependencies {
     compile project(':cheng-sdk')
     compile project(':library-scanbt')
     compile project(':library-del-bonded-devices')
-    annotationProcessor "org.androidannotations:androidannotations:3.2"
-    compile "org.androidannotations:androidannotations-api:3.2"
+    annotationProcessor "org.androidannotations:androidannotations:4.4.0"
+    compile "org.androidannotations:androidannotations-api:4.4.0"
 //    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:1.8.0'
 //    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.0.1'
 }

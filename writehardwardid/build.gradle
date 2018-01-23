@@ -50,8 +50,8 @@ dependencies {
     compile project(':cheng-sdk')
     compile project(':library-scanbt')
     compile project(':library-del-bonded-devices')
-    annotationProcessor "org.androidannotations:androidannotations:3.2"
-    compile "org.androidannotations:androidannotations-api:3.2"
+    annotationProcessor "org.androidannotations:androidannotations:4.4.0"
+    compile "org.androidannotations:androidannotations-api:4.4.0"
     compile 'com.j256.ormlite:ormlite-core:4.48'
     compile 'com.j256.ormlite:ormlite-android:4.48'
     compile 'com.orhanobut:logger:1.8'
