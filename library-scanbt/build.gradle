@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 
 //apply plugin: 'retrolambda'
 //apply plugin: 'me.tatarka.retrolambda'
-apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         minSdkVersion 15
@@ -30,21 +30,21 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':cheng-sdk')
-    apt "org.androidannotations:androidannotations:3.2"
+    annotationProcessor "org.androidannotations:androidannotations:3.2"
     compile "org.androidannotations:androidannotations-api:3.2"
 //    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:1.8.1'
 //    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.0.1'
 }
 
-apt {
-    arguments {
-        //region 用于Android Annotations
-        androidManifestFile variant.outputs[0].processResources.manifestFile
-        resourcePackageName android.defaultConfig.applicationId
-        trace true
-        //endregion
-    }
-}
+//apt {
+//    arguments {
+//        //region 用于Android Annotations
+//        androidManifestFile variant.outputs[0].processResources.manifestFile
+//        resourcePackageName android.defaultConfig.applicationId
+//        trace true
+//        //endregion
+//    }
+//}
 
 //retrolambda {
 //    jdk JAVA8_HOME

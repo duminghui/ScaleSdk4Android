@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 //apply plugin: 'me.tatarka.retrolambda'
 //apply plugin: 'retrolambda'
-apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "hcoor.whwid"
@@ -46,11 +46,11 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:appcompat-v7:26.0.2'
     compile project(':cheng-sdk')
     compile project(':library-scanbt')
     compile project(':library-del-bonded-devices')
-    apt "org.androidannotations:androidannotations:3.2"
+    annotationProcessor "org.androidannotations:androidannotations:3.2"
     compile "org.androidannotations:androidannotations-api:3.2"
     compile 'com.j256.ormlite:ormlite-core:4.48'
     compile 'com.j256.ormlite:ormlite-android:4.48'
@@ -60,16 +60,16 @@ dependencies {
 }
 
 
-apt {
-    arguments {
-        //region 用于Android Annotations
-        androidManifestFile variant.outputs[0].processResources.manifestFile
-//        resourcePackageName android.defaultConfig.applicationId
-        resourcePackageName 'demo.writehardwardid'
-        trace true
-        //endregion
-    }
-}
+//apt {
+//    arguments {
+//        //region 用于Android Annotations
+//        androidManifestFile variant.outputs[0].processResources.manifestFile
+////        resourcePackageName android.defaultConfig.applicationId
+//        resourcePackageName 'demo.writehardwardid'
+//        trace true
+//        //endregion
+//    }
+//}
 
 //retrolambda {
 //    jdk JAVA8_HOME
